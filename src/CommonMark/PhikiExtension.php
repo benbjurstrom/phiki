@@ -17,7 +17,7 @@ class PhikiExtension implements ConfigurableExtensionInterface
      * @param  bool  $withWrapper  Wrap the generated HTML in an additional `<div>` so that it can be styled with CSS. Useful for avoiding overflow issues.
      */
     public function __construct(
-        private string|array|Theme $theme,
+        private string|array|Theme $theme = Theme::Nord,
         private Phiki $phiki = new Phiki,
         private bool $withGutter = false,
         private bool $withWrapper = false,
